@@ -1,0 +1,44 @@
+.logoReveal {
+  clip-path: inset(0 0 100% 0);
+  opacity: 0;
+  animation: reveal-logo 3s cubic-bezier(0.22, 1, 0.36, 1) 500ms forwards;
+}
+
+@keyframes reveal-logo {
+  from {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+.jobReveal {
+  clip-path: inset(0 100% 0 100%);
+  opacity: 0;
+  animation: reveal-job 3s cubic-bezier(0.22, 1, 0.36, 1) 700ms forwards;
+}
+
+@keyframes reveal-job {
+  from {
+    clip-path: inset(0 100% 0 100%);
+    opacity: 0;
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logoReveal,
+  .jobReveal {
+    clip-path: none;
+    opacity: 1;
+    animation: none;
+  }
+}
