@@ -48,7 +48,7 @@ export function SiteHeader() {
           ))}
         </div>
 
-        <div className="bg-brand-red p-3 text-sm font-black uppercase hidden items-center lg:flex rounded-[20px]">
+        <div className="bg-brand-red-deep px-3 py-2 text-sm font-black uppercase hidden items-center lg:flex rounded-[20px]">
           <Link href="/booking" className="transition-colors hover:text-foreground">
             Book Now
           </Link>

@@ -12,7 +12,7 @@ export function SiteFooter() {
         fill
         sizes="100vw"
         aria-hidden="true"
-        className="object-contain object-center opacity-100 grayscale sm:hidden"
+        className="object-contain object-center opacity-30 grayscale sm:hidden"
       />
       <Image
         src="/home/hero/hero-desktopc.png"
@@ -20,7 +20,7 @@ export function SiteFooter() {
         fill
         sizes="(max-width: 1023px) 80vw, 60vw"
         aria-hidden="true"
-        className="hidden object-contain object-center opacity-100 grayscale sm:block"
+        className="hidden object-contain object-center opacity-30 grayscale sm:block"
       />
       <div className="absolute inset-0 bg-brand-black/60" aria-hidden="true" />
 

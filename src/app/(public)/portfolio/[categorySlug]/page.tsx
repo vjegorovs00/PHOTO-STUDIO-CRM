@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { BackHomeLink } from "../../_components/back-home-link";
 import { FinalCtaSection } from "../../_components/final-cta-section";
 import { getPortfolioCategory, portfolioCategories } from "../portfolio-data";
 
@@ -52,7 +51,6 @@ export default async function PortfolioCategoryPage({
       <section className="px-3 pb-6 pt-8 text-foreground sm:px-6 sm:pt-10 md:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-wrap gap-3">
-            <BackHomeLink />
             <Link
               href="/portfolio"
               className="inline-flex rounded-[20px] border border-brand-white px-3 py-3 text-xs font-black uppercase tracking-[0.22em] text-brand-white transition-colors hover:bg-brand-white hover:text-brand-black"
