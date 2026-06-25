@@ -5,7 +5,7 @@ import { CtaLink } from "@/components/shared/cta-link";
 export function HeroUnderline() {
   return (
     <div
-      className="bg-brand-charcoal rounded-4xl my-3 flex w-95 flex-wrap justify-between
+      className="bg-brand-charcoal rounded-4xl my-3 flex w-95 flex-wrap justify-between 
         sm:grid sm:w-full sm:grid-cols-[14rem_minmax(0,1fr)] sm:items-center sm:gap-x-2
         md:grid-cols-[16rem_minmax(0,1fr)]
         lg:grid-cols-[18rem_minmax(0,1fr)]"

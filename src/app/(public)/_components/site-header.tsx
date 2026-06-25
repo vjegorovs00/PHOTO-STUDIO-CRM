@@ -4,12 +4,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const navigationLinks = [
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/services", label: "Services" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-];
+import { publicNavigationLinks } from "./public-navigation";
 
 export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,14 +30,14 @@ export function SiteHeader() {
         className="relative z-10 mx-auto flex min-h-16 max-w-5xl items-center justify-between"
         aria-label="Main navigation"
       >
-        <div className="p-3 bg-brand-red-deep">
+        <div className="p-3 text-brand-red">
           <Link href="/home" className="text-sm font-black uppercase tracking-[0.18em]">
             JulieJul
           </Link>
         </div>
 
         <div className="hidden items-center gap-7 text-md font-semibold uppercase lg:flex">
-          {navigationLinks.map((link) => (
+          {publicNavigationLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -53,7 +48,7 @@ export function SiteHeader() {
           ))}
         </div>
 
-        <div className="bg-brand-red-deep p-3 text-sm font-black uppercase hidden items-center lg:flex">
+        <div className="bg-brand-red p-3 text-sm font-black uppercase hidden items-center lg:flex rounded-[20px]">
           <Link href="/booking" className="transition-colors hover:text-foreground">
             Book Now
           </Link>
@@ -77,7 +72,7 @@ export function SiteHeader() {
           className="fixed inset-0 z-0 bg-background px-5 pt-20 sm:px-8 lg:hidden"
         >
           <div className="mx-auto flex max-w-5xl flex-col gap-1 pt-8">
-            {navigationLinks.map((link) => (
+            {publicNavigationLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

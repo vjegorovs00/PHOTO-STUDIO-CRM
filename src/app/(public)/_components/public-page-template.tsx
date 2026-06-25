@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { BackHomeLink } from "./back-home-link";
+
 type PublicPageTemplateProps = {
   eyebrow: string;
   title: string;
@@ -17,7 +19,8 @@ export function PublicPageTemplate({
     <main className="flex flex-1">
       <section className="flex w-full items-end bg-brand-black px-5 py-16 sm:px-8 sm:py-24 lg:px-16 lg:py-32">
         <div className="mx-auto w-full max-w-5xl">
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-brand-red">
+          <BackHomeLink />
+          <p className="mt-8 text-sm font-black uppercase tracking-[0.18em] text-brand-red">
             {eyebrow}
           </p>
           <h1 className="mt-5 max-w-3xl text-5xl font-black uppercase tracking-[-0.06em] sm:text-7xl lg:text-8xl">
